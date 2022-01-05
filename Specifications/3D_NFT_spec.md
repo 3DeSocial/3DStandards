@@ -6,10 +6,11 @@
 
 This document specifies how we can use the existing properties of the DeSo API objects to store the data requried for a 3D NFT and a suggested format for asset and licence file storage.
 
+New properties can be stored in 3DExtraData which would be a property of PostExtraData
+
 Blochain Data Reference: <https://docs.deso.org/backend/blockchain-data/basics/data-types>
 
 Note that traits are not included as they are not a requirement for 3D NFTs so are aout of scope for this document.
-
 
 ### On-Chain Storage
 
