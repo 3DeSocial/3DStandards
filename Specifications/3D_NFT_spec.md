@@ -6,7 +6,7 @@
 
 This document specifies how we can use the existing properties of the DeSo API objects to store the data requried for a 3D NFT and a suggested format for asset and licence file storage.
 
-Note that traits are not included as they are not specific to 3D NFTs so are out of scope for this specification.
+Note that traits are not included as they are not a requirement for 3D NFTs so are aout of scope for this document.
 
 
 ### On-Chain Storage
@@ -26,7 +26,7 @@ JSON Property: JSON element name for nested data
 JSON Property: JSON nested data
 
 
-| **Label**              | **Field Name**               | **Source Object** | **Data Type** | ** JSON Property Name **                                                        | ** JSON Element Content **                   |
+| **Label**              | **Field Name**               | **Source Object** | **Data Type** | **JSON Property Name**                                                        | **JSON Element Content**                   |
 |------------------------|------------------------------|-------------------|---------------|--------------------------------------------------------------------|----------------------------|
 | On Sale                | IsForSale                    | NFT Entry         | bool          |                                                                    |                            |
 | Copies                 | NumNFTCopies                 | NFT Entry         | int           |                                                                    |                            |
