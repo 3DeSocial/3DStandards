@@ -10,10 +10,10 @@
 | Preview Videos         | VideoURLs                    | NFT Post          | array/string  |                                                                    |                            |
 | Hide From Feeds        | IsHidden                     | NFT Post          | bool          |                                                                    |                            |
 | Model Category         | PostExtraData => 3DExtraData | NFT Post          | string        | item/scenery/avatar/scene/other                                    |                            |
-| Model Formats          | PostExtraData => 3DExtraData | NFT Post          | string/json   | [<format>] =>                                                      | high_poly_foldername       |
+| Model Formats          | PostExtraData => 3DExtraData | NFT Post          | string/json   | [&lt;format_name&gt;] =>                                                      | high_poly_foldername       |
 |                        |                              |                   |               |                                                                    | low_poly_foldername        |
-|                        |                              |                   |               | [<format>] =>                                                      | high_poly_foldername       |
+|                        |                              |                   |               | [&lt;format_name&gt;] =>                                                      | high_poly_foldername       |
 |                        |                              |                   |               |                                                                    | low_poly_foldername        |
-| Asset Licences         | PostExtraData => 3DExtraData | NFT Post          | string/json   | [<format>] =>                                                      | high_poly_lisence_filename |
+| Asset Licences         | PostExtraData => 3DExtraData | NFT Post          | string/json   | [&lt;format_name&gt;] =>                                                      | high_poly_lisence_filename |
 |                        |                              |                   |               |                                                                    | low_poly_licence_filename  |
 |                        |                              |                   |               |                                                                    |                            |
