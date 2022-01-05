@@ -20,7 +20,7 @@ Owning the NFT gives you access to all the files necessary to load the 3D asset 
 
 NFTs of image files which are images of items created in 3D modeling software are not 3D NFTs unless the 3D model files are linked to the NFT and made available on purchase.
 
-### What Are NFT Standards? ###
+### What Are 3D NFT Standards? ###
 
 There are many possible ways that 3D assest and data pertaining to them could be stored on the DeSo blockchain.
 
@@ -32,7 +32,7 @@ Exammples:
 - Trophies earned in a game could be displayed in your personal 3D trophy room.
 - Sculptures could be auctioned in a 3D item store, imported to a digital gallery for public viewing and displayed in the 3D section of your personal website.
 
-### Why Do We Need NFT Standards? ###
+### Why Do We Need 3D NFT Standards? ###
 
 Web3 and NFTs are new and many individuals an organizations are experimenting with different ways of implementing them.
 
