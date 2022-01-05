@@ -1,12 +1,14 @@
 
-# H1 3D NFT Specification 
+# 3D NFT Specification 
 
 
-## H2 Overview
+## Overview
 
-This document specifies how we can use the existing properties of the DeSo API objects to store the data requried for a 3D NFT.
+This document specifies how we can use the existing properties of the DeSo API objects to store the data requried for a 3D NFT and a suggested format for asset and licence file storage.
 
-Table Columns
+
+
+### On-Chain Storage
 
 Label: Friendly name for field
 Field Name: The name of the JSON property to use will be used
@@ -32,6 +34,26 @@ JSON Property: JSON nested data
 |                        |                              |                   |               |                                                                    | low_poly_foldername        |
 |                        |                              |                   |               | [&lt;format_name&gt;] =>                                                      | high_poly_foldername       |
 |                        |                              |                   |               |                                                                    | low_poly_foldername        |
-| Asset Licences         | PostExtraData => 3DExtraData | NFT Post          | string/json   | [&lt;format_name&gt;] =>                                                      | high_poly_lisence_filename |
+| Asset Licences         | PostExtraData => 3DExtraData | NFT Post          | string/json   | [&lt;format_name&gt;] =>                                                      | high_poly_licence_filename |
 |                        |                              |                   |               |                                                                    | low_poly_licence_filename  |
 |                        |                              |                   |               |                                                                    |                            |
+
+
+### Asset Storage
+
+It is recommended that assets should be stored on permanent decentralized storage such as ARWeave or IPFS to maximize the value of the asset.
+
+Asset files can be stored in a zip file with the folders below to ensure that consumers of the NFT (i.e. metaverse platforms, digital galleries, marketplaces) will can easily find the version of the files needed for their software.
+
+
+| ** Asset Format Folder Name ** | ** Asset Resolution Folder Name ** | ** Files **                 |   |   |   |
+|--------------------------|-----------------------------|------------------------|
+| < format_name_1 >  | < format_name_1 >     | < asset_file >   |  
+|                          |                             | < asset_file >   | 
+| Example                  |                             |                        |
+| gtlf                     | high_poly_version           | asset_file.gtlf        |
+|                          |                             | asset_file.bin         |
+|                          |                             | asset_file_licence.txt |
+|                          | low_poly_version            | asset_file.gtlf        |
+|                          |                             | asset_file.bin         |
+|                          |                             | asset_file_licence.txt |
