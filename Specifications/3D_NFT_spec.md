@@ -12,11 +12,17 @@ Note that traits are not included as they are not specific to 3D NFTs so are out
 ### On-Chain Storage
 
 Label: Friendly name for field
+
 Field Name: The name of the JSON property to use will be used
+
 Source Object: The name of the DeSo Object / Datatype which contains the field
+
 Data Type: Type of data that can be stored
+
 Content: Description or example of content
+
 JSON Property: JSON element name for nested data
+
 JSON Property: JSON nested data
 
 
