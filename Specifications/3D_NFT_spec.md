@@ -46,14 +46,14 @@ It is recommended that assets should be stored on permanent decentralized storag
 Asset files can be stored in a zip file with the folders below to ensure that consumers of the NFT (i.e. metaverse platforms, digital galleries, marketplaces) will can easily find the version of the files needed for their software.
 
 
-| ** Asset Format Folder Name ** | ** Asset Resolution Folder Name ** | ** Files **                 |   |   |   |
+| Asset Format Folder Name | Asset Resolutin Folder Name | Files                  |
 |--------------------------|-----------------------------|------------------------|
-| < format_name_1 >  | < format_name_1 >     | < asset_file >   |  
-|                          |                             | < asset_file >   | 
+| < format_name_1 >  | < format_name_1 >     | < asset_file >   |
+|                          |                             | < asset_file >   |
 | Example                  |                             |                        |
 | gtlf                     | high_poly_version           | asset_file.gtlf        |
 |                          |                             | asset_file.bin         |
-|                          |                             | asset_file_licence.txt |
+|                          |                             | asset_file_lisence.txt |
 |                          | low_poly_version            | asset_file.gtlf        |
 |                          |                             | asset_file.bin         |
-|                          |                             | asset_file_licence.txt |
+|                          |                             | asset_file_lisence.txt |
