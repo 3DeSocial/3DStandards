@@ -44,7 +44,7 @@ JSON Property: JSON nested data
 |                        |                              |                   |               |                                                                    | low_poly_foldername        |
 |                        |                              |                   |               | [&lt;format_name&gt;] =>                                                      | high_poly_foldername       |
 |                        |                              |                   |               |                                                                    | low_poly_foldername        |
-| Asset Licences         | PostExtraData => 3DExtraData | NFT Post          | string/json   | [&lt;format_name&gt;] =>                                                      | high_poly_licence_filename |
+| Asset Licences         | PostExtraData => 3DExtraData | Post Entry         | string/json   | [&lt;format_name&gt;] =>                                                      | high_poly_licence_filename |
 |                        |                              |                   |               |                                                                    | low_poly_licence_filename  |
 |                        |                              |                   |               |                                                                    |                            |
 
