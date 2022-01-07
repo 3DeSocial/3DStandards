@@ -33,18 +33,18 @@ JSON Property: JSON nested data
 |------------------------|------------------------------|-------------------|---------------|--------------------------------------------------------------------|----------------------------|
 | On Sale                | IsForSale                    | NFT Entry         | bool          |                                                                    |                            |
 | Copies                 | NumNFTCopies                 | NFT Entry         | int           |                                                                    |                            |
-| Model URL              | EncryptedUnlockableText      | NFT Entry         | string/json   | Asset Storage URL linking to downloadable zip on ARWeave, IPFS etc |                            |
 | Minimum Bid            | LowestBidAmountNanos         | NFT Entry         | int           |                                                                    |                            |
 | Description            | Body                         | Post Entry          | text          |                                                                    |                            |
 | Preview Images or Gifs | ImageURLs                    | Post Entry          | array/string  |                                                                    |                            |
 | Preview Videos         | VideoURLs                    | Post Entry          | array/string  |                                                                    |                            |
 | Hide From Feeds        | IsHidden                     | Post Entry          | bool          |                                                                    |                            |
-| Model Category         | PostExtraData => 3DExtraData | Post Entry          | string        | Examples: item/scenery/avatar/scene/other                                    |                            |
-| Model Formats          | PostExtraData => 3DExtraData | Post Entry          | string/json   | [&lt;format_name&gt;] =>                                                      | high_poly_foldername       |
+| Model URL              | PostExtraData.3DExtraData.ModelURL | Post Entry         | string/json   | Asset Storage URL linking to downloadable zip on ARWeave, IPFS etc |                            |
+| Model Category         | PostExtraData.3DExtraData.ModelCat | Post Entry          | string        | Examples: item/scenery/avatar/scene/other                                    |                            |
+| Model Formats          | PostExtraData.3DExtraData.ModelFormat | Post Entry          | string/json   | [&lt;format_name&gt;] =>                                                      | high_poly_foldername       |
 |                        |                              |                   |               |                                                                    | low_poly_foldername        |
 |                        |                              |                   |               | [&lt;format_name&gt;] =>                                                      | high_poly_foldername       |
 |                        |                              |                   |               |                                                                    | low_poly_foldername        |
-| Asset Licences         | PostExtraData => 3DExtraData | Post Entry         | string/json   | [&lt;format_name&gt;] =>                                                      | high_poly_licence_filename |
+| Asset Licences         | PostExtraData.3DExtraData.ModelLicence | Post Entry         | string/json   | [&lt;format_name&gt;] =>                                                      | high_poly_licence_filename |
 |                        |                              |                   |               |                                                                    | low_poly_licence_filename  |
 |                        |                              |                   |               |                                                                    |                            |
 
