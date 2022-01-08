@@ -38,8 +38,8 @@ JSON Property: JSON nested data
 | Preview Images or Gifs | ImageURLs                    | Post Entry          | array/string  |                                                                    |                            |
 | Preview Videos         | VideoURLs                    | Post Entry          | array/string  |                                                                    |                            |
 | Hide From Feeds        | IsHidden                     | Post Entry          | bool          |                                                                    |                            |
-| Asset URLS              | PostExtraData.3DExtraData.AssetURLS | Post Entry         | string/json array  | JSON array of URLs linking to downloadable zip on ARWeave, IPFS etc |                            |
-| Model Category         | PostExtraData.3DExtraData.ModelCat | Post Entry          | string        | Examples: item/scenery/avatar/scene/other                                    |                            |
+| Asset URLS              | PostExtraData.3DExtraData.AssetURLs | Post Entry         | string/json array  | JSON array of URLs linking to downloadable zip on ARWeave, IPFS etc |                            |
+| Model Categories         | PostExtraData.3DExtraData.ModelCats | Post Entry          | string/json array  | JSON array of categories such as item/scenery/avatar/scene/other                                    |                            |
 | Model Formats          | PostExtraData.3DExtraData.ModelFormat | Post Entry          | string/json   | [&lt;format_name&gt;] =>                                                      | high_poly_foldername       |
 |                        |                              |                   |               |                                                                    | low_poly_foldername        |
 |                        |                              |                   |               | [&lt;format_name&gt;] =>                                                      | high_poly_foldername       |
@@ -48,6 +48,27 @@ JSON Property: JSON nested data
 |                        |                              |                   |               |                                                                    | low_poly_licence_filename  |
 |                        |                              |                   |               |                                                                    |                            |
 
+
+### 3DExtraData Example
+
+3DExtraData is a JSON object stored as a property of PostExtraData
+In the example below the item assets are stored in two different formats - gtlf and threejsscene
+in ModelFormats the array values low_poly_version and high_polyversion are the folder names in which the assets can be found within the zip file
+in ModelLicenses the array values low_poly_version_licence and high_polyversion_licence are the file names of the licence for each format and version of the file
+
+
+{
+	ModelCats: ['item'],
+	AssetURLs: ['https://arweave.org/blablabla'],
+	ModelFormats: {
+	'gtlf':['low_poly_version','high_polyversion'],
+	'threejsscene':['hd_version','low_poly_version']
+	}
+	ModelLicenses: {
+	'gtlf':['low_poly_version_licence','high_polyversion_licence'],
+	'threejsscene':['hd_version_licence','low_poly_version_licence']
+	}	
+}
 
 ### Asset Storage
 
