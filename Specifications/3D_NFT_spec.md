@@ -38,7 +38,7 @@ JSON Property: JSON nested data
 | Preview Images or Gifs | ImageURLs                    | Post Entry          | array/string  |                                                                    |                            |
 | Preview Videos         | VideoURLs                    | Post Entry          | array/string  |                                                                    |                            |
 | Hide From Feeds        | IsHidden                     | Post Entry          | bool          |                                                                    |                            |
-| Model URL              | PostExtraData.3DExtraData.ModelURL | Post Entry         | string/json   | Asset Storage URL linking to downloadable zip on ARWeave, IPFS etc |                            |
+| Asset URLS              | PostExtraData.3DExtraData.AssetURLS | Post Entry         | string/json array  | JSON array of URLs linking to downloadable zip on ARWeave, IPFS etc |                            |
 | Model Category         | PostExtraData.3DExtraData.ModelCat | Post Entry          | string        | Examples: item/scenery/avatar/scene/other                                    |                            |
 | Model Formats          | PostExtraData.3DExtraData.ModelFormat | Post Entry          | string/json   | [&lt;format_name&gt;] =>                                                      | high_poly_foldername       |
 |                        |                              |                   |               |                                                                    | low_poly_foldername        |
