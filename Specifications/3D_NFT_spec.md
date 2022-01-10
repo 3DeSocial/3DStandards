@@ -76,7 +76,7 @@ Most 3D NFTs will be a single model, but to facilitate item collections we can u
 ```
 {
 	
-	Models:[3DModel,3DModel]
+	3DModels:[3DModel,3DModel]
 		
 }
 ```
@@ -85,7 +85,7 @@ Expanded 3DExtraData example showing an NFT representing 2 3D object (for exampl
 
 ```
 {
-	Models:[{
+	3DModels:[{
 			ModelUrl: 'https://arweave.org/arweaveurl1',
 			ModelCats: ['item'],
 			ModelFormats: {
