@@ -56,17 +56,17 @@ A single 3DModel is formatted as follows:
 
 ```
 
-		{
-			ModelUrl'https://arweave.org/arweaveurl1',
-			ModelCats: ['item'],
-			ModelFormats: {
-				'gtlf':['low_poly_version','high_polyversion'],
-				'threejsscene':['hd_version','low_poly_version'],
-			ModelLicenses: {
-				'gtlf':['low_poly_version_licence','high_polyversion_licence'],
-				'threejsscene':['hd_version_licence','low_poly_version_licence']
-			}
-		}
+{
+	ModelUrl: 'https://arweave.org/arweaveurl1',
+	ModelCats: ['item'],
+	ModelFormats: {
+		'gtlf':['low_poly_version','high_polyversion'],
+		'threejsscene':['hd_version','low_poly_version'],
+	ModelLicenses: {
+		'gtlf':['low_poly_version_licence','high_polyversion_licence'],
+		'threejsscene':['hd_version_licence','low_poly_version_licence']
+	}
+}
 ```
 ### 3DExtraData Example
 
@@ -85,9 +85,8 @@ Expanded 3DExtraData example showing an NFT representing 2 3D object (for exampl
 
 ```
 {
-	
 	Models:[{
-			ModelUrl'https://arweave.org/arweaveurl1',
+			ModelUrl: 'https://arweave.org/arweaveurl1',
 			ModelCats: ['item'],
 			ModelFormats: {
 				'gtlf':['low_poly_version','high_polyversion'],
@@ -106,8 +105,7 @@ Expanded 3DExtraData example showing an NFT representing 2 3D object (for exampl
 				'gtlf':['low_poly_version_licence','high_polyversion_licence'],
 				'threejsscene':['hd_version_licence','low_poly_version_licence']
 			}
-		}]
-		
+		}]		
 }
 ```
 ### Asset Storage
@@ -122,9 +120,9 @@ Asset files can be stored in a zip file with the folders below to ensure that co
 | < format_name_1 >  | < version_name_1 >     | < asset_file >   |
 |                          |                             | < asset_file >   |
 | Example                  |                             |                        |
-| gtlf                     | high_poly_version           | asset_file.gtlf        |
-|                          |                             | asset_file.bin         |
-|                          |                             | asset_file_lisence.txt |
-|                          | low_poly_version            | asset_file.gtlf        |
-|                          |                             | asset_file.bin         |
-|                          |                             | asset_file_lisence.txt |
+| gtlf                     | high_poly_version           | high_polyasset_file.gtlf        |
+|                          |                             | high_polyasset_file.bin         |
+|                          |                             | high_polyasset_file_lisence.txt |
+|                          | low_poly_version            | low_poly_asset_file.gtlf        |
+|                          |                             | low_poly_asset_file.bin         |
+|                          |                             | low_poly_asset_file_lisence.txt |
