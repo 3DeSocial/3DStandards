@@ -38,36 +38,76 @@ JSON Property: JSON nested data
 | Preview Images or Gifs | ImageURLs                    | Post Entry          | array/string  |                                                                    |                            |
 | Preview Videos         | VideoURLs                    | Post Entry          | array/string  |                                                                    |                            |
 | Hide From Feeds        | IsHidden                     | Post Entry          | bool          |                                                                    |                            |
-| Asset URLS              | PostExtraData.3DExtraData.AssetURLs | Post Entry         | string/json array  | JSON array of URLs linking to downloadable zip on ARWeave, IPFS etc |                            |
-| Model Categories         | PostExtraData.3DExtraData.ModelCats | Post Entry          | string/json array  | JSON array of categories such as item/scenery/avatar/scene/other                                    |                            |
-| Model Formats          | PostExtraData.3DExtraData.ModelFormat | Post Entry          | string/json   | [&lt;format_name&gt;]                                                      | high_poly_foldername       |
-|                        |                              |                   |               |                                                                    | low_poly_foldername        |
-|                        |                              |                   |               | [&lt;format_name&gt;]                                                      | high_poly_foldername       |
-|                        |                              |                   |               |                                                                    | low_poly_foldername        |
-| Asset Licences         | PostExtraData.3DExtraData.ModelLicence | Post Entry         | string/json   | [&lt;format_name&gt;]                                                      | high_poly_licence_filename |
-|                        |                              |                   |               |                                                                    | low_poly_licence_filename  |
-|                        |                              |                   |               |                                                                    |                            |
+| Asset URLS              | PostExtraData.3DExtraData.3DModels[] | Post Entry         | string/json array  | JSON array of 3DModel JSON objects linking to downloadable zips on ARWeave, IPFS etc |                            |
 
 
+
+### 3DModel Example
+
+The 3DModels[] property of 3D extra data is an array of 3DModel json objects.
+
+In the example below the 3DModel assets are stored in two different formats - gtlf and threejsscene
+
+in ModelFormats the array values low_poly_version and high_polyversion are the **folder names** within the uploaded zip file in which the assets can be found within the zip file
+
+in ModelLicenses the array values low_poly_version_licence and high_polyversion_licence are the **file names** within the uploaded zip file of the licence for each format and version of the file.
+
+A single 3DModel is formatted as follows:
+
+```
+
+		{
+			ModelUrl'https://arweave.org/arweaveurl1',
+			ModelCats: ['item'],
+			ModelFormats: {
+				'gtlf':['low_poly_version','high_polyversion'],
+				'threejsscene':['hd_version','low_poly_version'],
+			ModelLicenses: {
+				'gtlf':['low_poly_version_licence','high_polyversion_licence'],
+				'threejsscene':['hd_version_licence','low_poly_version_licence']
+			}
+		}
+```
 ### 3DExtraData Example
 
 3DExtraData is a JSON object stored as a property of PostExtraData
-In the example below the item assets are stored in two different formats - gtlf and threejsscene
-in ModelFormats the array values low_poly_version and high_polyversion are the ** folder names ** in which the assets can be found within the zip file
-in ModelLicenses the array values low_poly_version_licence and high_polyversion_licence are the ** file names ** of the licence for each format and version of the file
+Most 3D NFTs will be a single model, but to facilitate item collections we can use an array of models
 
 ```
 {
-	ModelCats: ['item'],
-	AssetURLs: ['https://arweave.org/blablabla'],
-	ModelFormats: {
-	'gtlf':['low_poly_version','high_polyversion'],
-	'threejsscene':['hd_version','low_poly_version']
-	}
-	ModelLicenses: {
-	'gtlf':['low_poly_version_licence','high_polyversion_licence'],
-	'threejsscene':['hd_version_licence','low_poly_version_licence']
-	}	
+	
+	Models:[3DModel,3DModel]
+		
+}
+```
+
+Expanded 3DExtraData example showing an NFT representing 2 3D object (for example this could be a furniture set with a table and a chair, or a clothing set with a top and bottom half): 
+
+```
+{
+	
+	Models:[{
+			ModelUrl'https://arweave.org/arweaveurl1',
+			ModelCats: ['item'],
+			ModelFormats: {
+				'gtlf':['low_poly_version','high_polyversion'],
+				'threejsscene':['hd_version','low_poly_version'],
+			ModelLicenses: {
+				'gtlf':['low_poly_version_licence','high_polyversion_licence'],
+				'threejsscene':['hd_version_licence','low_poly_version_licence']
+			}
+		},{
+			ModelUrl'https://arweave.org/arweaveurl2',
+			ModelCats: ['item'],
+			ModelFormats: {
+				'gtlf':['low_poly_version','high_polyversion'],
+				'threejsscene':['hd_version','low_poly_version'],
+			ModelLicenses: {
+				'gtlf':['low_poly_version_licence','high_polyversion_licence'],
+				'threejsscene':['hd_version_licence','low_poly_version_licence']
+			}
+		}]
+		
 }
 ```
 ### Asset Storage
