@@ -126,3 +126,17 @@ Asset files can be stored in a zip file with the folders below to ensure that co
 |                          | low_poly_version            | low_poly_asset_file.gtlf        |
 |                          |                             | low_poly_asset_file.bin         |
 |                          |                             | low_poly_asset_file_lisence.txt |
+
+Example Zip Folder Contents / File List:
+
+- gtlf 
+	- high_poly
+		- asset_file.gtlf
+		- asset_file.bin
+		- any other asset files 
+		- asset_file_licence.txt 
+	- low_poly
+		- asset_file.gtlf
+		- asset_file.bin
+		- any other asset files 
+		- asset_file_licence.txt 		
