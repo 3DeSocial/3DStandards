@@ -53,10 +53,10 @@ JSON Property: JSON nested data
 
 3DExtraData is a JSON object stored as a property of PostExtraData
 In the example below the item assets are stored in two different formats - gtlf and threejsscene
-in ModelFormats the array values low_poly_version and high_polyversion are the folder names in which the assets can be found within the zip file
-in ModelLicenses the array values low_poly_version_licence and high_polyversion_licence are the file names of the licence for each format and version of the file
+in ModelFormats the array values low_poly_version and high_polyversion are the ** folder names ** in which the assets can be found within the zip file
+in ModelLicenses the array values low_poly_version_licence and high_polyversion_licence are the ** file names ** of the licence for each format and version of the file
 
-
+```
 {
 	ModelCats: ['item'],
 	AssetURLs: ['https://arweave.org/blablabla'],
@@ -69,7 +69,7 @@ in ModelLicenses the array values low_poly_version_licence and high_polyversion_
 	'threejsscene':['hd_version_licence','low_poly_version_licence']
 	}	
 }
-
+```
 ### Asset Storage
 
 It is recommended that assets should be stored on permanent decentralized storage such as ARWeave or IPFS to maximize the value of the asset.
