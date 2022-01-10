@@ -40,11 +40,11 @@ JSON Property: JSON nested data
 | Hide From Feeds        | IsHidden                     | Post Entry          | bool          |                                                                    |                            |
 | Asset URLS              | PostExtraData.3DExtraData.AssetURLs | Post Entry         | string/json array  | JSON array of URLs linking to downloadable zip on ARWeave, IPFS etc |                            |
 | Model Categories         | PostExtraData.3DExtraData.ModelCats | Post Entry          | string/json array  | JSON array of categories such as item/scenery/avatar/scene/other                                    |                            |
-| Model Formats          | PostExtraData.3DExtraData.ModelFormat | Post Entry          | string/json   | [&lt;format_name&gt;] =>                                                      | high_poly_foldername       |
+| Model Formats          | PostExtraData.3DExtraData.ModelFormat | Post Entry          | string/json   | [&lt;format_name&gt;]                                                      | high_poly_foldername       |
 |                        |                              |                   |               |                                                                    | low_poly_foldername        |
-|                        |                              |                   |               | [&lt;format_name&gt;] =>                                                      | high_poly_foldername       |
+|                        |                              |                   |               | [&lt;format_name&gt;]                                                      | high_poly_foldername       |
 |                        |                              |                   |               |                                                                    | low_poly_foldername        |
-| Asset Licences         | PostExtraData.3DExtraData.ModelLicence | Post Entry         | string/json   | [&lt;format_name&gt;] =>                                                      | high_poly_licence_filename |
+| Asset Licences         | PostExtraData.3DExtraData.ModelLicence | Post Entry         | string/json   | [&lt;format_name&gt;]                                                      | high_poly_licence_filename |
 |                        |                              |                   |               |                                                                    | low_poly_licence_filename  |
 |                        |                              |                   |               |                                                                    |                            |
 
