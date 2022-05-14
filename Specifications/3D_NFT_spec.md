@@ -57,7 +57,7 @@ A single 3DModel is formatted as follows:
 ```
 
 {
-	ModelUrl: 'https://arweave.org/arweaveurl1',
+	ModelUrl: ['https://arweave.org/arweaveurl1','https://images.google.com/imageurl','https://ipfs.io/ipfs/imageurl'], // Change from v1 - can now be an array to allow for multiple sources
 	ModelCats: ['item'],
 	ModelFormats: {
 		'gtlf':['low_poly_version','high_polyversion'],
@@ -86,7 +86,7 @@ Expanded 3DExtraData example showing an NFT representing 2 3D object (for exampl
 ```
 {
 	3DModels:[{
-			ModelUrl: 'https://arweave.org/arweaveurl1',
+			ModelUrl: ['https://arweave.org/arweaveurl1','https://images.google.com/imageurl','https://ipfs.io/ipfs/imageurl']
 			ModelCats: ['item'],
 			ModelFormats: {
 				'gtlf':['low_poly_version','high_polyversion'],
@@ -96,7 +96,7 @@ Expanded 3DExtraData example showing an NFT representing 2 3D object (for exampl
 				'threejsscene':['hd_version_licence','low_poly_version_licence']
 			}
 		},{
-			ModelUrl'https://arweave.org/arweaveurl2',
+			ModelUrl: ['https://arweave.org/arweaveurl1','https://images.google.com/imageurl','https://ipfs.io/ipfs/imageurl'],
 			ModelCats: ['item'],
 			ModelFormats: {
 				'gtlf':['low_poly_version','high_polyversion'],
