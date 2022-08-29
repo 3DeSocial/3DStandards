@@ -22,7 +22,7 @@ The grouping types so far are:
 
 #### Circle
 
-Properites:
+Properties:
 
 type:'circle' - Indicates items will be plotted in a circle.
 
