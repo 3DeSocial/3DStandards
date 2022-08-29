@@ -40,7 +40,7 @@ center: (Optional) - The center of the circle in 3D space. Defaults to 0,0,0
 floorPlan: [{type:'centerPiece',
                 maxItems: 1},
                 {type:'circle',
-				center:{x:0,y: 0,z: 0},
+                center:{x:0,y: 0,z: 0},
                 radius: 9,
                 maxItems: 5},
                 {type:'circle',
