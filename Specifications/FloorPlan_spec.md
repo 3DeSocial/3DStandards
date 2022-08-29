@@ -24,13 +24,29 @@ The grouping types so far are:
 
 Properties:
 
-type:'circle' - Indicates items will be plotted in a circle.
+type:'circle' - Indicates items will be plotted evenly in a circle.
 
 radius: <number of meters> - distance from the center to the circle in meters.
 
 maxItems: <number of items> The number of items that will be plotted evenly around the circle.
 
-center: (Optional) - The center of the circle in 3D space. Defaults to 0,0,0
+center: {x:0,y: 0,z: 0} (Optional) - The center of the circle in 3D space. Defaults to 0,0,0
+
+#### Row
+
+type:'row' - Indicates items will be plotted evenly between two points.
+
+start: {x:0,y: 0,z: 0}
+
+end: {x:0,y: 0,z: 0}
+
+maxItems: <maximum number of items in this row>
+
+#### CenterPiece
+
+type:'circle' - Indicates item will be plotted in the highest priority / central place 
+
+center: {x:0,y: 0,z: 0} (Optional) - The position to be plotted in 3D space. Defaults to 0,0,0
 
 ### JSON Example
 
