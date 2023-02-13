@@ -1,0 +1,28 @@
+
+Example of DeSo API Update Profile Request for activating a cross-platform avatar
+
+{
+  "UpdaterPublicKeyBase58Check": "BC1YLjYeycnXxDYyUDeKpsx8a7R9QjRbeasrhUqx8bSoescdNui7zrv",
+  "ProfilePublicKeyBase58Check": "BC1YLjYeycnXxDYyUDeKpsx8a7R9QjRbeasrhUqx8bSoescdNui7zrv",
+  "NewUsername": "",
+  "NewDescription": "",
+  "NewProfilePic": "",
+  "NewCreatorBasisPoints": 10000,
+  "NewStakeMultipleBasisPoints": 12500,
+  "IsHidden": false,
+  "MinFeeRateNanosPerKB": 1000,
+  "ExtraData": {
+    "FeaturedImageURL": "",
+    "LargeProfilePicURL": "",
+    "XRExtraData": "{activeAvatar: 0679fd9cb1292294c097aa0db8ab0a1009e036e31dd9cce01802bd99e2f4935a}"
+  }
+}
+
+The important part:
+
+XRExtraData contains a serialized json object containing any user profile settings related to XR / VR / AR
+
+To set a specific 3DNFT as the active avatar for 3D environments store the DeSo blockchain NFT hash in the activeAvatar property
+This could potentially link to 3D models minted on any chain capable of storing 3D NFT metadata
+
+ "XRExtraData": "{activeAvatar: 0679fd9cb1292294c097aa0db8ab0a1009e036e31dd9cce01802bd99e2f4935a}"
