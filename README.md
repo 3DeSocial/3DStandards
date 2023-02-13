@@ -1,4 +1,4 @@
-# 3D NFT Standards
+# 3D NFT Specifications
 Proposed Standards For 3D / Metaverse Components
 
 ## Introduction
